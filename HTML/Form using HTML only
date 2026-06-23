@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Roll Number -->
+        <div>
+            <label for="rollNo">Roll No. :</label>
+            <input type="text" id="rollNo" name="rollNo">
+        </div>
+
+        <br>
+
+        <!-- Student Name -->
+        <div>
+            <label for="firstName">Student Name :</label>
+            <input type="text" id="firstName" placeholder="First Name">
+
+            <input type="text" id="lastName" placeholder="Last Name">
+        </div>
+
+        <br>
+
+        <!-- Father's Name -->
+        <div>
+            <label for="fatherName">Father's Name :</label>
+            <input type="text" id="fatherName">
+        </div>
+
+        <br>
+
+        <!-- Date of Birth -->
+        <div>
+            <label>Date of Birth :</label>
+
+            <input type="text" placeholder="Day" maxlength="2">
+
+            <input type="text" placeholder="Month" maxlength="2">
+
+            <input type="text" placeholder="Year" maxlength="4">
+
+            <span>(DD-MM-YYYY)</span>
+        </div>
+
+        <br>
+
+        <!-- Mobile Number -->
+        <div>
+            <label for="mobile">Mobile No. :</label>
+
+            <input type="text" value="+91" readonly size="3">
+
+            <input type="tel" id="mobile" placeholder="Enter Mobile Number">
+        </div>
+
+        <br>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email Id :</label>
+            <input type="email" id="email">
+        </div>
+
+        <br>
+
+        <!-- Password -->
+        <div>
+            <label for="password">Password :</label>
+            <input type="password" id="password">
+        </div>
+
+        <br>
+
+        <!-- Gender -->
+        <div>
+            <label>Gender :</label>
+
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+
+        <br>
+
+        <!-- Department -->
+        <div>
+            <label>Department :</label>
+
+            <input type="checkbox" id="cse">
+            <label for="cse">CSE</label>
+
+            <input type="checkbox" id="it">
+            <label for="it">IT</label>
+
+            <input type="checkbox" id="ece">
+            <label for="ece">ECE</label>
+
+            <input type="checkbox" id="civil">
+            <label for="civil">Civil</label>
+
+            <input type="checkbox" id="mech">
+            <label for="mech">Mech</label>
+        </div>
+
+        <br>
+
+        <!-- Course -->
+        <div>
+            <label for="course">Course :</label>
+
+            <select id="course">
+                <option>------Select Current Course------</option>
+                <option value="fullstack">Full Stack Java</option>
+                <option value="testing">Software Testing</option>
+                <option value="aiml">AI-ML</option>
+                <option value="cloud">Cloud Computing</option>
+                <option value="dataAnalytics">Data Analytics</option>
+            </select>
+        </div>
+
+        <br>
+
+        <!-- Photo -->
+        <div>
+            <label for="photo">Student Photo :</label>
+            <input type="file" id="photo">
+        </div>
+
+        <br>
+
+        <!-- City -->
+        <div>
+            <label for="city">City :</label>
+            <input type="text" id="city">
+        </div>
+
+        <br>
+
+        <!-- Address -->
+        <div>
+            <label for="address">Address :</label>
+            <textarea id="address" rows="4" cols="30"></textarea>
+        </div>
+
+        <br>
+
+        <!-- Submit Button -->
+        <div>
+            <input type="submit" value="Register">
+        </div>
+
+    </form>
+
+</body>
+</html>
