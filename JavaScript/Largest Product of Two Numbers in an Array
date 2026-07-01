@@ -1,0 +1,16 @@
+function product(arr){
+    let maxProduct = arr[0] * arr[1];
+
+    for(let i = 0; i < arr.length; i++){
+        for(let j = i + 1; j < arr.length; j++){
+            if(arr[i] * arr[j] > maxProduct){
+                maxProduct = arr[i] * arr[j];
+            }
+        }
+    }
+
+    return maxProduct;
+}
+
+let arr = [1, 2, 3, 4, 5, 6];
+console.log(product(arr)); // 30
